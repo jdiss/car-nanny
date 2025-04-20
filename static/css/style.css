@@ -1,0 +1,122 @@
+/* Custom styles for Car Nanny - Flat Design */
+:root {
+    --primary-color: #4CAF50;  /* Light green */
+    --secondary-color: #81C784;  /* Lighter green */
+    --accent-color: #2E7D32;  /* Darker green for contrast */
+    --text-color: #333333;
+    --light-bg: #F5F5F5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+.hero-section {
+    background-color: #ffffff;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 0;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.navbar {
+    background-color: white !important;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+/* Login Page Styles */
+.card {
+    border: 1px solid #E0E0E0;
+    border-radius: 0;
+}
+
+.card-header {
+    background-color: var(--primary-color) !important;
+    border-radius: 0 !important;
+    color: white;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: none;
+}
+
+/* Hero Illustration Styles */
+.hero-illustration {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero-section .col-lg-6:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-illustration {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .hero-section {
+        padding: 50px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+} 
