@@ -1,38 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Nanny - Smart Car Service Management</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Car Nanny</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary ms-2" href="/login">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+{% extends "_publicLayout.html" %}
+
+{% block title %}Home - Car Nanny{% endblock %}
+
+{% block content %}
 
     <!-- Hero Section -->
     <header class="hero-section">
@@ -83,49 +53,52 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="py-5 bg-light">
+    <section id="pricing" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">Subscription Plans</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card mb-4">
+                    <div class="card mb-4 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Basic Plan</h5>
-                            <h6 class="card-price">$9.99/month</h6>
+                            <h5 class="card-title text-center">Basic Plan</h5>
+                            <h6 class="card-price text-center text-success">$9.99/month</h6>
+                            <hr>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Basic car tracking</li>
-                                <li>Email support</li>
-                                <li>Access to mobile app</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Basic car tracking</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Email support</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Access to mobile app</li>
                             </ul>
-                            <a href="#" class="btn btn-primary">Sign Up</a>
+                
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4">
+                    <div class="card mb-4 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Standard Plan</h5>
-                            <h6 class="card-price">$19.99/month</h6>
+                            <h5 class="card-title text-center">Standard Plan</h5>
+                            <h6 class="card-price text-center text-success">$19.99/month</h6>
+                            <hr>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Advanced car tracking</li>
-                                <li>Priority email support</li>
-                                <li>Access to mobile and web app</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Advanced car tracking</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Priority email support</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Access to mobile and web app</li>
                             </ul>
-                            <a href="#" class="btn btn-primary">Sign Up</a>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4">
+                    <div class="card mb-4 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Premium Plan</h5>
-                            <h6 class="card-price">$29.99/month</h6>
+                            <h5 class="card-title text-center">Premium Plan</h5>
+                            <h6 class="card-price text-center text-success">$29.99/month</h6>
+                            <hr>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>All features included</li>
-                                <li>24/7 support</li>
-                                <li>Access to all platforms</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> All features included</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 24/7 support</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Access to all platforms</li>
                             </ul>
-                            <a href="#" class="btn btn-primary">Sign Up</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -149,7 +122,4 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-</body>
-</html>
+{% endblock %}
