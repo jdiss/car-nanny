@@ -1,22 +1,27 @@
 /* Custom styles for Car Nanny - Flat Design with Rounded Corners */
 :root {
-    --primary-color: #4CAF50;  /* Light green */
-    --secondary-color: #81C784;  /* Lighter green */
-    --accent-color: #2E7D32;  /* Darker green for contrast */
+    --primary-color: #0075E3;  /* New primary blue color */
+    --secondary-color: #66B2FF;  /* Complementary lighter blue */
+    --accent-color: #005BB5;  /* Darker blue for contrast */
     --text-color: #333333;
     --light-bg: #F5F5F5;
+    --panel-bg: #FFFFFF;  /* White for panels */
+    --background-color: #F0F0F0;  /* Light grey background */
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 .hero-section {
-    background-color: #ffffff;
     padding: 100px 0;
     margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-section h1 {
@@ -32,8 +37,18 @@ body {
     color: var(--text-color);
 }
 
+.hero-illustration {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0;  /* Remove rounded corners for flat design */
+    box-shadow: none;  /* Remove shadow for flat design */
+}
+
 .feature-card {
-    background: white;
+    background: var(--panel-bg);
     padding: 30px;
     border-radius: 10px;
     border: 1px solid #E0E0E0;
@@ -52,7 +67,7 @@ body {
 }
 
 .navbar {
-    background-color: white !important;
+    background-color: var(--panel-bg) !important;
     border-bottom: 1px solid #E0E0E0;
 }
 
@@ -75,6 +90,7 @@ body {
 
 /* Login Page Styles */
 .card {
+    background: var(--panel-bg);
     border: 1px solid #E0E0E0;
     border-radius: 10px;
 }
@@ -92,22 +108,6 @@ body {
 .form-control:focus {
     border-color: var(--secondary-color);
     box-shadow: none;
-}
-
-/* Hero Illustration Styles */
-.hero-illustration {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    margin: 0 auto;
-    display: block;
-}
-
-.hero-section .col-lg-6:last-child {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
 }
 
 /* Responsive adjustments */
