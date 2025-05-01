@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Car Silhouette -->
+  <g fill="#001E44">
+    <!-- Shield Shape (Nanny/Protection Element) -->
+    <path d="M30 10 L50 10 L55 15 L55 45 L40 55 L25 45 L25 15 L30 10Z"/>
+    <!-- Car Shape inside Shield -->
+    <path fill="#ffffff" d="M35 25 L45 25 L47 28 L47 35 L33 35 L33 28 L35 25Z M34 31 A2 2 0 1 0 34 35 A2 2 0 1 0 34 31Z M46 31 A2 2 0 1 0 46 35 A2 2 0 1 0 46 31Z"/>
+    <!-- Text -->
+    <text x="65" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Car Nanny</text>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Elements -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa" opacity="0.1"/>
+  
+  <!-- Garage Floor -->
+  <rect x="50" y="500" width="700" height="20" fill="#e0e0e0"/>
+  
+  <!-- Car Lift -->
+  <rect x="200" y="300" width="400" height="200" fill="#4a90e2" opacity="0.1"/>
+  <rect x="180" y="300" width="20" height="200" fill="#2d3748"/>
+  <rect x="600" y="300" width="20" height="200" fill="#2d3748"/>
+  
+  <!-- Car Body (simplified modern style) -->
+  <path d="M250 350 C250 350 300 350 400 350 C500 350 550 350 550 350 L570 380 L230 380 L250 350" fill="#2d3748"/>
+  <rect x="260" y="380" width="280" height="40" fill="#2d3748"/>
+  
+  <!-- Wheels -->
+  <circle cx="300" cy="420" r="20" fill="#4a5568"/>
+  <circle cx="500" cy="420" r="20" fill="#4a5568"/>
+  
+  <!-- Mechanic Figure (simplified modern style) -->
+  <circle cx="400" cy="280" r="15" fill="#4a90e2"/> <!-- Head -->
+  <rect x="390" y="295" width="20" height="40" fill="#4a90e2"/> <!-- Body -->
+  <line x1="390" y1="315" x2="370" y2="335" stroke="#4a90e2" stroke-width="8"/> <!-- Left Arm -->
+  <line x1="410" y1="315" x2="430" y2="335" stroke="#4a90e2" stroke-width="8"/> <!-- Right Arm -->
+  <line x1="390" y1="335" x2="380" y2="365" stroke="#4a90e2" stroke-width="8"/> <!-- Left Leg -->
+  <line x1="410" y1="335" x2="420" y2="365" stroke="#4a90e2" stroke-width="8"/> <!-- Right Leg -->
+  
+  <!-- Tools -->
+  <rect x="450" y="270" width="30" height="10" fill="#718096" transform="rotate(45, 465, 275)"/> <!-- Wrench -->
+  
+  <!-- Decorative Elements -->
+  <circle cx="200" cy="250" r="5" fill="#4a90e2" opacity="0.5"/>
+  <circle cx="600" cy="250" r="5" fill="#4a90e2" opacity="0.5"/>
+  <circle cx="400" cy="150" r="5" fill="#4a90e2" opacity="0.5"/>
+  
+  <!-- Abstract Lines -->
+  <line x1="150" y1="200" x2="200" y2="250" stroke="#4a90e2" stroke-width="2" opacity="0.3"/>
+  <line x1="600" y1="200" x2="650" y2="250" stroke="#4a90e2" stroke-width="2" opacity="0.3"/>
+</svg>

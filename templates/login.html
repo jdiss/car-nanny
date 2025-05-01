@@ -1,41 +1,36 @@
-{% extends "_publicLayout.html" %}
-
-{% block title %}Login - Car Nanny{% endblock %}
+{% extends "_authLayout.html" %}
 
 {% block content %}
-
-
-    <!-- Login Section -->
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-5">
-                <div class="card">
-                    <div class="card-body">
-                        <form id="loginForm" action="/login" method="post">
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password" name="password" required>
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="rememberMe">
-                                <label class="form-check-label" for="rememberMe">Remember me</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">Login</button>
-                        </form>
-                        <div class="text-center mt-3">
-                            <a href="#" class="text-decoration-none">Forgot password?</a>
-                        </div>
-                        <div class="text-center mt-3">
-                            <p>Don't have an account? <a href="#" class="text-decoration-none">Sign up</a></p>
-                        </div>
-                    </div>
-                </div>
+<div class="login-form-container">
+    <h1 class="welcome-back">Welcome to Vahanary</h1>
+    <form id="loginForm" action="/login" method="post">
+        <div class="form-group">
+            <div class="input-icon-wrapper">
+                <i class="fas fa-envelope"></i>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email address"
+                    required>
             </div>
         </div>
-    </div>
+        <div class="form-group">
+            <div class="input-icon-wrapper">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="form-control" id="password" name="password"
+                    placeholder="Password" required>
+            </div>
+        </div>
+        <div class="form-group text-end">
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Log in</button>
+    </form>
 
-{% endblock %} 
+    <div class="mt-3 text-center">
+        <p>Don't have an account? <a href="#" class="text-primary">Sign up</a></p>
+    </div>
+    <div class="login-footer mt-3">
+        <a href="#">Privacy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">FAQ</a>
+    </div>
+</div>
+{% endblock %}
